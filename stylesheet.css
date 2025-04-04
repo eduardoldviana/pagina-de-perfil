@@ -2,8 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 :root {
     --cor-primaria: #BAC2AF;
-    --tamanho-fonte: 16px;
+    --cor-secundaria: black;
+    --cor-terciaria: #C09484;
    }
+.dark{
+    --cor-primaria: #4E0400;
+    --cor-secundaria: white;
+    --cor-terciaria: #315400;
+}
 div.container{
     display: grid;
     width: 100%;
@@ -25,9 +31,10 @@ section{
     text-align: center;
     margin: 20px;
     padding: 5px;
-    border: #C09484 solid 3px;
-    background-color: #C09484;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-terciaria);
     border-radius: 15px;
+    transition: background-color 2s, color 2s;
 }
 footer{
     grid-area: footer;
@@ -35,12 +42,12 @@ footer{
 }
 body{
     background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    transition: background-color 2s, color 2s;  
     font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;       
-    
+
 }
+
 h1{
     text-align: center;
     font-family: "Bungee Tint", sans-serif;
@@ -62,27 +69,29 @@ ul{
 }
 img{
     width: 200px;
-    border: #C66658 solid;
     border-radius: 50%;
     aspect-ratio: 1/1;
     object-fit: cover;
 }
 section.myself{
-    border: #C66658 solid 3px;
     border-radius: 15px;
 }
 button{
     border-radius: 15px;
     font-size: 30px;
-    background-color: #C09484;
-    border: solid 2px #C66658;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 2s, color 2s;  
 }
-
+#darkMode{
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+}
 button:hover{
     cursor: pointer;
 }
