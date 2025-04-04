@@ -73,7 +73,7 @@ section.myself{
 }
 button{
     border-radius: 15px;
-    font-size: clamp(1rem, 0.798rem + 0.822vw, 1.5rem);
+    font-size: 1.5rem;
     background-color: #C09484;
     border: solid 2px #C66658;
     font-family: "Josefin Sans", sans-serif;
